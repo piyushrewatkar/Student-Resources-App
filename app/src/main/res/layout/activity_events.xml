@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+
+    android:layout_height="match_parent"
+    tools:context="link.example.com.ctb.EventsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:title="Events"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:src="@drawable/acad_cal"
+        android:id="@+id/imageView"/>
+
+
+
+</RelativeLayout>

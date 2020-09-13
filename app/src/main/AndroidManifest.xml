@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="link.example.com.ctb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/learning"
+        android:label="CT DEPT"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DeveloperActivity" />
+        <activity android:name=".SubjectsActivity" />
+        <activity android:name=".TimetableActivity" />
+        <activity android:name=".SyllabusActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FacultyActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity
+            android:name=".ResourceActivity"
+            android:label="@string/title_activity_resource"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CheckAttenActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".FacultyScrollingActivity"
+            android:label="@string/title_activity_faculty_scrolling"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

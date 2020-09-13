@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="link.example.com.ctb.CheckAttenActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:title="Check Your Attendance"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="From:"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        />
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:hint="click here"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/from"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="To:"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="110dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:clickable="true"
+            android:hint="click here"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/to"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        android:id="@+id/show"
+        android:layout_marginTop="20dp"
+        android:text="SHOW"
+        android:textSize="18dp"
+        android:background="@drawable/shape"/>
+
+</LinearLayout>
